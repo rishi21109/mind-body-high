@@ -1,0 +1,174 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: rgba(173, 216, 230, 0.9); /* Light Blue */
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fafad2; /* Light Goldenrod Yellow */
+}
+
+/* Parallax Effect */
+.parallax {
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(173, 216, 230, 0.6); /* Semi-transparent Light Blue */
+    animation: fadeIn 2s ease;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    background: #fafad2; /* Light Goldenrod Yellow */
+    text-align: center;
+    color: #333;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Team Member Layout */
+.team-member {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+    background: #f9f9f9; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.team-info {
+    max-width: 700px;
+}
+
+.team-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-info p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Social Media Buttons */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.social-icon.instagram {
+    background: #e1306c; /* Instagram Pink */
+}
+
+.social-icon.instagram:hover {
+    background: #b12052; /* Darker Instagram Pink */
+    transform: scale(1.05);
+}
+
+.social-icon.youtube {
+    background: #FF0000; /* YouTube Red */
+}
+
+.social-icon.youtube:hover {
+    background: #CC0000; /* Darker YouTube Red */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

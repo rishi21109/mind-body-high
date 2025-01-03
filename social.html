@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media - Mental Health Awareness</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", sans-serif;
+            height: 100%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        nav {
+            background-color: rgba(230, 230, 250, 0.9); /* Lavender */
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #f8f8ff;
+        }
+        section {
+            padding: 50px 20px;
+            background: #f8f8ff; /* Ghost White */
+            text-align: center;
+            color: #333;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 1rem;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            margin: 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .social-icon img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .social-icon.instagram {
+            background: #e1306c; /* Instagram Pink */
+        }
+        .social-icon.instagram:hover {
+            background: #b12052; /* Darker Instagram Pink */
+            transform: scale(1.05);
+        }
+        .social-icon.youtube {
+            background: #FF0000; /* YouTube Red */
+        }
+        .social-icon.youtube:hover {
+            background: #CC0000; /* Darker YouTube Red */
+            transform: scale(1.05);
+        }
+    </style>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="social.html">Social Media</a>
+    </nav>
+    <section>
+        <h2>Connect with Us</h2>
+        <p>Stay updated and engaged by following us on social media:</p>
+        <a class="social-icon instagram" href="https://www.instagram.com/mind.body.high/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+            Follow Us on Instagram
+        </a>
+        <a class="social-icon youtube" href="https://www.youtube.com/channel/UCOS9Fu9Ta86Ap8Q3D6gRb4g" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+            Visit Our YouTube Channel
+        </a>
+    </section>
+</body>
+</html>
